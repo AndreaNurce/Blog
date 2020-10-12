@@ -14,20 +14,23 @@
       <div class="shadowDiv"></div>
   </div>
   </div>
+  <app-social></app-social>
 
+  
   </div>
 </template>
 <script>
-import About from './AboutUs.vue'
+import social from './SocialLinks.vue'
 export default {
   components :{
-    'app-about' : About,
+    'app-social' : social,
   }
 }
 </script>
 </script>
 <style scoped>
   .mainDiv{
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -88,5 +91,6 @@ export default {
 
     }
   }
+
 
 </style>

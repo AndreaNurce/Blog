@@ -21,7 +21,9 @@ export default {
     'app-about' : About,
     'app-navigat' : Contact,
     'app-nav' : NavBar,
-    'app-home' : Home 
+    'app-home' : Home,  
+
+
   }
 }
 </script>
