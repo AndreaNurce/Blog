@@ -1,7 +1,6 @@
 <template>
         <div>
     <section class="socialNav">
-            <!-- Add font awesome icons -->
     <a href="https://facebook.com" target="_blank" class="fa fa-facebook"></a>
     <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
     <a href="https://github.com" target="_blank" class="fa fa-github"></a>
@@ -20,8 +19,9 @@ export default {
   margin-left: auto;
   margin-right: auto;
   align-items: center;
+  z-index : 5;
 }
-   /* Style all font awesome icons */
+
 .fa {
   margin: 8px;
   padding: 14px;
@@ -35,21 +35,17 @@ export default {
 
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
   transform: scale(1.1);
 }
 
-/* Set a specific color for each brand */
 
-/* Facebook */
 .fa-facebook {
   background: #3B5998;
   color: white;
 }
 
-/* Twitter */
 .fa-twitter {
   background: #55ACEE;
   color: white;

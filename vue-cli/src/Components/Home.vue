@@ -15,15 +15,20 @@
   </div>
   </div>
   <app-social></app-social>
-
-  
+<svg style="margin-top:-120px;margin-left:-2px;z-index:-1;position:relative;" xmlns="http://www.w3.org/2000/svg" width="100.11%" height="162"  >
+    <path d="M1577.901638794106 160.57875181579H1V1c380.31158527056 0 380.31158527056 148.940155127897 760.62319885543 148.940078288074C1169.76241882477 149.940190879736 1169.76241882477 1 1577.901638794106 1z" fill="#3f3d56"/>
+</svg>
+<app-aboutUs style="margin-top:-10px;background-color:#3F3D56"></app-aboutUs>
   </div>
 </template>
 <script>
 import social from './SocialLinks.vue'
+import AboutUs from './AboutUs.vue'
+
 export default {
   components :{
     'app-social' : social,
+    'app-aboutUs' : AboutUs,
   }
 }
 </script>
