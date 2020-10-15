@@ -29,6 +29,9 @@ export default {
 </script>
 
 <style >
+#id{
+  font-family:" San Francisco', Helvetica, Arial, san-serif";
+}
  .fade-enter{
    opacity: 0;
   }

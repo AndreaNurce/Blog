@@ -3,7 +3,7 @@
     <section class="socialNav">
     <a href="https://facebook.com" target="_blank" class="fa fa-facebook"></a>
     <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
-    <a href="https://github.com" target="_blank" class="fa fa-github"></a>
+    <a href="https://github.com/AndreaNurce" target="_blank" class="fa fa-github"></a>
     <a href="https://linkedin.com" target="_blank" class="fa fa-linkedin"></a>
     </section>
     </div>

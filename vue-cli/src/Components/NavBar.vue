@@ -5,7 +5,7 @@
                 <a href="/"><img src="/src/images/instagram.png"  alt="logo"></a>
                 <ul>
                     <router-link to="/" active-class="active" tag="li" exact>Home</router-link>
-                    <router-link to="/about" active-class="active" tag="li" >About</router-link>
+                    <router-link to="/about" active-class="active" tag="li" >About Us</router-link>
                     <router-link to="/Contact" active-class="active" tag="li" >Contact Us</router-link>
                     
                 </ul>
