@@ -41,6 +41,7 @@ export default {
 img,a{
     height: 40px;
     margin: auto 0;
+    padding-left: 5px;
 
 }
 li{
