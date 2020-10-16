@@ -16,8 +16,7 @@
   </div>
   <app-social></app-social>
 <img src="/src/images/svg.svg" alt="" style="width:100.14%;margin-top:-120px;margin-left:-2px;z-index:-1;position:relative;">
-<app-aboutUs style="margin-top:-10px;background-color:#3F3D56;height:2000px"></app-aboutUs>
-
+<app-aboutUs style="margin-top:-10px;background-color:#3F3D56;color:white;"></app-aboutUs>
   </div>
 </template>
 <script>
