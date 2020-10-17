@@ -1,6 +1,6 @@
 <template>
   <div id="AboutUs">
-    <div class="contactTittle">
+    <div class="contactTittle"  >
         <h1 >About Us</h1>
         <div class="bottomDiv"></div>
     </div>
@@ -10,7 +10,7 @@
         <br>
       <div class="mainDivWrapper">
         
-        <div class="wrapperDiv">
+        <div  class="wrapperDiv" >
             <div class="textDivWrapper" >Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Ratione perferendis dolore hic sint. Unde dolores laborum accusamus, at repudiandae dolorum quam
               , magnam itaque veritatis rem et id quisquam nostrum Lorem ipsum dolor sit, amet consectetur 
@@ -105,7 +105,8 @@ h1{
 }
 .textDivWrapper{
   width:500px;
-   padding:30px
+   padding:30px;
+   font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 

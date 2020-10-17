@@ -1,7 +1,8 @@
 <template>
 <div>
+  <div style="position:fixed;z-index:-1; top:0; width:100%;">
   <div class="mainDiv">
-    <div class="textWrapper">
+    <div class="textWrapper" >
     <h1 style="color:#3F3D56;">Lorem ipsum dolor</h1><br><br>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
        Harum ipsam veniam impedit placeat officiis, est vel reprehenderit !</p>
@@ -14,24 +15,41 @@
       <div class="shadowDiv"></div>
   </div>
   </div>
+  </div>
+  <div style="margin-top:680px;  margin-bottom: 60px;">
   <app-social></app-social>
-<img src="/src/images/svg.svg" alt="" style="width:100.14%;margin-top:-120px;margin-left:-2px;z-index:-1;position:relative;">
-<app-aboutUs style="margin-top:-10px;background-color:#3F3D56;color:white;"></app-aboutUs>
+<img src="/src/images/svg.svg" alt="">
+<app-aboutUs style="margin-top:-10px;
+                    background-color:#3F3D56;
+                    color:white;">
+                    </app-aboutUs>
+<app-contactUs></app-contactUs>
+</div>
   </div>
 </template>
 <script>
 import social from './SocialLinks.vue'
 import AboutUs from './AboutUs.vue'
+import ContactUs from './ContactUs.vue'
+
 
 export default {
   components :{
     'app-social' : social,
     'app-aboutUs' : AboutUs,
+    'app-contactUs' : ContactUs
   }
 }
 </script>
 </script>
 <style scoped>
+img{
+  width:100.14%;
+  margin-top:-120px;
+  margin-left:-2px;
+  z-index:-1;
+  position:relative;
+}
   .mainDiv{
 
     display: flex;

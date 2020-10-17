@@ -6,7 +6,7 @@
                 <ul>
                     <router-link to="/" active-class="active" tag="li" exact>Home</router-link>
                     <router-link to="/about" active-class="active" tag="li" >About Us</router-link>
-                    <router-link to="/Contact" active-class="active" tag="li" >Contact Us</router-link>
+                    <router-link to="/ContactUs" active-class="active" tag="li" >Contact Us</router-link>
                     
                 </ul>
             </div>
@@ -27,7 +27,10 @@ export default {
     background-color: white;
     box-shadow: 0px 1px 10px #999;
     position: fixed;
-    z-index: 2;
+    z-index:2; 
+    top:0; 
+
+
 }
 .mainBar {
     width: 1200px;
@@ -36,13 +39,11 @@ export default {
     align-content: center;
     background-color: white;
 
-
 }
 img,a{
     height: 40px;
     margin: auto 0;
     padding-left: 5px;
-
 }
 li{
     text-decoration-style: none;
@@ -51,11 +52,13 @@ li{
     font-weight: bolder;
     cursor: pointer ;
     padding: 1rem;
+
 }
 .active { 
     background-color:#575A89;
     color: white;
     animation: active-in;
+
 }
 
 </style>
