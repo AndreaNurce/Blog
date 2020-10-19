@@ -27,7 +27,7 @@ export default {
     background-color: white;
     box-shadow: 0px 1px 10px #999;
     position: fixed;
-    z-index:2; 
+    z-index:3   ; 
     top:0; 
 
 

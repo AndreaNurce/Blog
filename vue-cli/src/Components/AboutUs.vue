@@ -3,16 +3,16 @@
     <div class="headWrapper">
       <h2 class="" >We create brands that the world loves </h2>
       <h1>About Us</h1>
-      <p style="" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, repudiandae et? Eius doloribus atque libero assumenda deleniti fugiat quia facilis officiis natus! Dolores voluptates illo molestiae consequatur laboriosam. Sit, itaque!</p>
-      <h3 class="AboutUsButon" >Find Out More</h3>
+      <p>lor sit amet, consectetur adipisicing elit. Magnam, repudiandae et? Eius doloribus atque libero assumenda deleniti fugiat quia facilis officiis natus! Dolores voluptates illo molestiae consequatur laboriosam. Sit, itaque!</p>
+      <h3 >Find Out More</h3>
     </div>
     <div class="containerWrapper">
 
       <div v-bind:key = index v-for="(item,index) in items" >
         <div class="container">
-          <img v-bind:src="item.image" alt="">
-          <h2>{{item.header}}</h2>
-          <p>{{item.paragraph}}</p>
+          <img v-bind:src="item" alt="">
+          <h2>{{dumbHeader}}</h2>
+          <p>{{dumbText}}</p>
 
         </div>
       </div>
@@ -28,27 +28,9 @@ export default {
 
   data(){
   return{
-    items: [{
-      image: '/src/images/1.png',
-      header: 'Lorem ipsum ',
-      paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ea eaque quasi molestiae voluptatem iure ipsam voluptate ipsa, voluptas sed sapiente. Deserunt doloremque, sunt adipisci eos consequatur ea illo explicabo!'
-    },
-    {
-      image: '/src/images/2.png',
-      header: 'Lorem ipsum ',
-      paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ea eaque quasi molestiae voluptatem iure ipsam voluptate ipsa, voluptas sed sapiente. Deserunt doloremque, sunt adipisci eos consequatur ea illo explicabo!'
-    },
-    {
-      image: '/src/images/3.png',
-      header: 'Lorem ipsum ',
-      paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ea eaque quasi molestiae voluptatem iure ipsam voluptate ipsa, voluptas sed sapiente. Deserunt doloremque, sunt adipisci eos consequatur ea illo explicabo!'
-    },
-    {
-      image: '/src/images/4.png',
-      header: 'Lorem ipsum ',
-      paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ea eaque quasi molestiae voluptatem iure ipsam voluptate ipsa, voluptas sed sapiente. Deserunt doloremque, sunt adipisci eos consequatur ea illo explicabo!'
-    }
-    ]
+    dumbHeader : "Lorem Ipsum",
+    dumbText : "dolor sit amet consectetur adipisicing elit. Ab, ea eaque quasi molestiae voluptatem iure ipsam voluptate ipsa, voluptas sed sapiente. Deserunt doloremque, sunt adipisci eos consequatur ea illo explicabo!",
+    items: ['/src/images/1.png','/src/images/2.png','/src/images/3.png','/src/images/4.png']
   }
 }
   
@@ -62,7 +44,7 @@ export default {
   column-gap: 40px;
   row-gap: 40px;
   justify-content: center;
-  padding-bottom : 140px ;
+  padding-bottom : 100px ;
 }
 .containerWrapper > :first-child {
   margin-top : 60px;
@@ -71,7 +53,7 @@ export default {
   margin-top : -60px;
 }
 .container{
-  width:400px;
+  width:370px;
   height:300px;
   background-color: white;
   border-radius: 10px;
@@ -81,7 +63,9 @@ export default {
 }
 .container > p {
   color : gray;
-  padding : 20px 15px 
+  padding : 20px 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 .container > h2 {
   color : black;
@@ -102,6 +86,7 @@ export default {
 }
 .headWrapper > p {
   padding: 60px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .headWrapper > h2{
   font-size:150%;
@@ -121,6 +106,7 @@ export default {
   display: inline;
   border-radius: 50px;
   cursor: pointer;
+  color: white;
 }
 
 </style>
