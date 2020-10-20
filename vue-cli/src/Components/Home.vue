@@ -16,15 +16,15 @@
   </div>
   </div>
   </div>
-  <div style="margin-top:680px;  margin-bottom: 60px;">
+  <div style="margin-top:680px;">
   <app-social></app-social>
 <img src="/src/images/svg.svg" alt="">
-<app-aboutUs style="margin-top:-10px;
+<app-aboutUs style="margin-top : -6px;
                     background-color:#3F3D56;
                     color:white;">
                     </app-aboutUs>
-<app-contactUs></app-contactUs>
 </div>
+<app-contactUs > </app-contactUs>
   </div>
 </template>
 <script>

@@ -9,8 +9,7 @@ export default {
 }
 </script>
 <style scoped>
-#Footer{
-
+.Footer{
   position:fixed;
   z-index:-1;
   bottom:0;
