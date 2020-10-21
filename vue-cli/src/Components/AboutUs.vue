@@ -37,6 +37,9 @@ export default {
 }
 </script>
 <style scoped>
+#AboutUs{
+  margin-bottom: 500px;
+}
 .containerWrapper{
   display:grid;
   grid-template-columns: auto auto;
@@ -107,7 +110,12 @@ export default {
   border-radius: 50px;
   cursor: pointer;
   color: white;
+  transition:  0.3s all ease-in-out;
+
 }
+.headWrapper > h3:hover{
+    background-color:#888cbb;
+  }
 
 </style>
 

@@ -58,7 +58,12 @@ li{
     background-color:#575A89;
     color: white;
     animation: active-in;
+    transition:  0.3s all ease-in-out;
 
+
+}
+.active:hover{
+    background-color:#888cbb;
 }
 
 </style>

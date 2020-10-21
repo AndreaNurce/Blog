@@ -20,24 +20,31 @@
   <app-social></app-social>
 <img src="/src/images/svg.svg" alt="">
 <app-aboutUs style="margin-top : -6px;
+                    margin-bottom:0px;
                     background-color:#3F3D56;
                     color:white;">
                     </app-aboutUs>
 </div>
 <app-contactUs > </app-contactUs>
+<app-footer></app-footer>
   </div>
 </template>
 <script>
 import social from './SocialLinks.vue'
 import AboutUs from './AboutUs.vue'
 import ContactUs from './ContactUs.vue'
+import footer from './footer.vue'
+
+
 
 
 export default {
   components :{
     'app-social' : social,
     'app-aboutUs' : AboutUs,
-    'app-contactUs' : ContactUs
+    'app-contactUs' : ContactUs,
+    'app-footer' : footer,
+    
   }
 }
 </script>
@@ -71,6 +78,11 @@ img{
     color: white;
     font-weight: 900;
     cursor: pointer;
+    transition:  0.3s all ease-in-out;
+
+  }
+  .textWrapper > button:hover{
+    background-color:#888cbb;
   }
   .coddingMan {
         animation: imageAnimation 2s alternate infinite ;
