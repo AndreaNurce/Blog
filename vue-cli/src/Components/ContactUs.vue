@@ -39,15 +39,15 @@ export default {
       contents : [
         {
           text : '123-456-789',
-          image : '/src/images/1.png',
+          image : '/src/images/mobile-phone.png',
         },
         {
           text : '222-444-8888',
-          image : '/src/images/2.png',
+          image : '/src/images/old-typical-phone.png',
         },
         {
           text : 'example@example.com',
-          image : '/src/images/3.png',
+          image : '/src/images/email.png',
         }
       ]
     }
@@ -106,6 +106,7 @@ export default {
 .formWrapper  > p{
   font-size: 18px;
   padding : 18px;
+  color:gray;
 }
 .formWrapper > form > input {
   border-right: none;
