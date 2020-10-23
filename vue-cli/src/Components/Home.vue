@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div style="position:fixed;z-index:-1; top:0; width:100%;">
+  <div ref="enterDiv" style="padding-bottom:100px;position:fixed;z-index:-1; top:0; width:100%; background-color:white;">
   <div class="mainDiv">
     <div class="textWrapper" >
     <h1 style="color:#3F3D56;">Lorem ipsum dolor</h1><br><br>
@@ -22,11 +22,12 @@
 <app-aboutUs style="margin-top : -6px;
                     margin-bottom:0px;
                     background-color:#3F3D56;
-                    color:white;">
+                    color:white;"
+                    >
                     </app-aboutUs>
 </div>
 <app-contactUs > </app-contactUs>
-<app-footer></app-footer>
+  <app-footer></app-footer>
   </div>
 </template>
 <script>
@@ -39,6 +40,11 @@ import footer from './footer.vue'
 
 
 export default {
+  data (){
+    return{
+      isUserScrolling : 'true'
+    }
+  },
   components :{
     'app-social' : social,
     'app-aboutUs' : AboutUs,
@@ -46,8 +52,8 @@ export default {
     'app-footer' : footer,
     
   }
-}
-</script>
+  }
+
 </script>
 <style scoped>
 img{

@@ -11,10 +11,11 @@ export default {
 <style scoped>
 .Footer{
   position:fixed;
-  z-index:-1;
+  z-index:-5;  
   bottom:0;
   width:100%;
-  background-color: white;
+  background-color: black;
+  height : 500px;
 }
 
 </style>
