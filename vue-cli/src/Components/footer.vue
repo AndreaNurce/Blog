@@ -11,13 +11,20 @@
         <div style="width:70%;margin-left: auto;margin-right: auto;text-align:center;">
         <hr>
         <h5>Copy Right @2020 | Designed by Andrea</h5>
-        <br><br><br><br>
+        <br><br>
+        <app-social></app-social>
+        <br><br>
         </div>
     </div>
 </template>
 <script>
  
+    import Social from "./SocialLinks.vue"
 export default {
+    components : {
+        'app-social' : Social,
+
+    },
     data(){
     return {
       contect: {
