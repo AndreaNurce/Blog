@@ -3,7 +3,9 @@
         <div class="footerWrapper">
             <div  :key="index" v-for="(objectContent,index) in contect.contentObjects">
                 <h1> {{objectContent.tittle}} </h1>
-                <p :key="index" v-for="(text,index) in objectContent.texts">{{text.theText}}</p>
+                <p :key="index" v-for="(text,index) in objectContent.texts"><img style="float:left;height:10px" :src="text.image" alt="">{{text.theText}}</p>
+                
+
             </div>
         </div>
     </div>
@@ -16,7 +18,13 @@ export default {
       contect: {
       contentObjects : [{
           tittle : 'Find Us',
-          texts : [{ theText : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem modi hic repudiandae odio repellat quae. Aperiam, accusantium ipsa deleniti eaque fugiat aliquam facere quidem inventore nobis? Repellendus laborum iusto f' },]
+          texts : [{ theText : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem modi hic repudiandae odio repellat quae. Aperiam, accusantium ipsa deleniti eaque fugiat aliquam facere quidem inventore nobis? Repellendus laborum iusto f' },
+                    { image : '/src/images/mobile-phone.png'},
+                    { theText : '123-456-789'},
+                    { image : '/src/images/old-typical-phone.png'},
+                    { theText : '222-444-8888'},
+                    { image : '/src/images/email.png'},
+                    { theText : 'example@example.com'},]
         },
         {
           tittle : 'Quick Links',
@@ -37,7 +45,7 @@ export default {
             { theText : 'repellat quae' },
             { theText : 'Aperiam' },
             { theText : 'accusantium' },
-            { theText : ' ipsa deleniti eaque' },
+            { theText : ' ipsa del-eniti eaque' },
           ]
         }
       ]
