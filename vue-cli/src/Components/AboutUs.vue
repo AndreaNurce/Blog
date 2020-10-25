@@ -37,9 +37,7 @@ export default {
 }
 </script>
 <style scoped>
-#AboutUs{
-  margin-bottom: 500px;
-}
+
 .containerWrapper{
   display:grid;
   grid-template-columns: auto auto;

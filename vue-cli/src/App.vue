@@ -5,6 +5,7 @@
       <transition name="fade" mode="out-in" appear>
       <router-view> </router-view>
     </transition>
+    <app-footer></app-footer>
   </div>
 </template>
 
@@ -14,6 +15,8 @@ import About from './Components/AboutUs.vue'
 import Contact from './Components/ContactUs.vue'
 import NavBar from './Components/NavBar.vue'
 import Home from './Components/Home.vue'
+import footer from './Components/footer.vue'
+
 
 
 export default {
@@ -22,6 +25,8 @@ export default {
     'app-navigat' : Contact,
     'app-nav' : NavBar,
     'app-home' : Home,  
+    'app-footer' : footer,  
+
 
 
   }

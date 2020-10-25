@@ -75,9 +75,6 @@ export default {
 #ContactUs{
   background-color: white;
   height: 900px;
-  margin-bottom: 500px;
-
-
 }
 .formWrapper{
   width : 50%;
