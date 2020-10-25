@@ -1,13 +1,11 @@
 <template>
     <div id="Footer">
-    <div class="footerWrapper">
-                            <div  :key="index" v-for="(folder,index) in priv.folders">
-                        {{folder.tittle}}
-                            <p :key="index" v-for="(text,index) in folder.texts">
-                                {{text.theText}}
-                            </p>
-                        </div>
-      </div>
+        <div class="footerWrapper">
+            <div  :key="index" v-for="(objectContent,index) in contect.contentObjects">
+                <h1> {{objectContent.tittle}} </h1>
+                <p :key="index" v-for="(text,index) in objectContent.texts">{{text.theText}}</p>
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -15,33 +13,31 @@
 export default {
     data(){
     return {
-      priv: {
-      folders : [{
+      contect: {
+      contentObjects : [{
           tittle : 'Find Us',
-          texts : [{ theText : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem modi hic repudiandae odio repellat quae. Aperiam, accusantium ipsa deleniti eaque fugiat aliquam facere quidem inventore nobis? Repellendus laborum iusto f' },
-            { theText : 'check1.1' },   
-            { theText : 'check1.2' }
-          ]
+          texts : [{ theText : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem modi hic repudiandae odio repellat quae. Aperiam, accusantium ipsa deleniti eaque fugiat aliquam facere quidem inventore nobis? Repellendus laborum iusto f' },]
         },
         {
-          tittle : 'folder2',
+          tittle : 'Quick Links',
           texts : [
-            { theText : 'check2.1' },
-            { theText : 'check2.2' }
+            { theText : 'Lorem' },
+            { theText : 'ipsum dolor' },
+            { theText : 'sit amet' },
+            { theText : 'Ebay & Amazon' },
+            { theText : 'adipisicing elit' },
+            { theText : 'elit' },
           ]
         },
-        {
-          tittle : 'folder3',
+        { 
+          tittle : 'Quick Links 2',
           texts : [
-            { theText : 'check2.1' },
-            { theText : 'check2.2' }
-          ]
-        },
-        {
-          tittle : 'folder4',
-          texts : [
-            { theText : 'check2.1' },
-            { theText : 'check2.2' }
+            { theText : 'Autem modi hic ' },
+            { theText : 'repudiandae odio' },
+            { theText : 'repellat quae' },
+            { theText : 'Aperiam' },
+            { theText : 'accusantium' },
+            { theText : ' ipsa deleniti eaque' },
           ]
         }
       ]
