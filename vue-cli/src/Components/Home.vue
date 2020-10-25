@@ -27,7 +27,6 @@
                     </app-aboutUs>
 </div>
 <app-contactUs > </app-contactUs>
-  <app-footer></app-footer>
   </div>
 </template>
 <script>

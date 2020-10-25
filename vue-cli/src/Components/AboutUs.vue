@@ -7,17 +7,13 @@
       <h3 >Find Out More</h3>
     </div>
     <div class="containerWrapper">
-
       <div v-bind:key = index v-for="(item,index) in items" >
         <div class="container">
           <img v-bind:src="item" alt="">
           <h2>{{dumbHeader}}</h2>
           <p>{{dumbText}}</p>
-
         </div>
       </div>
-
-
     </div>
  </div>
 </template>
@@ -116,5 +112,3 @@ export default {
   }
 
 </style>
-
-

@@ -52,7 +52,13 @@ li{
     font-weight: bolder;
     cursor: pointer ;
     padding: 1rem;
+    transition:  0.3s all ease-in-out;
 
+
+}
+li:hover:hover{
+    background-color:#888cbb;
+    color: white;
 }
 .active { 
     background-color:#575A89;
