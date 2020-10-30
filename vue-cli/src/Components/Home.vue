@@ -109,6 +109,19 @@ img{
 
       
   }
+  @media screen and (max-width:1040px) {
+
+     .textWrapper{
+    width: 300px;
+    line-height: 25px;
+
+  }
+    .coddingMan {
+       width:400.43901px; 
+       height:250.88124px; 
+  }
+    
+  }
   
   @keyframes imageAnimation {
     from {
