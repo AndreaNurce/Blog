@@ -10,7 +10,8 @@
         </div>
         <div style="width:70%;margin-left: auto;margin-right: auto;text-align:center;">
         <hr>
-        <h5>Copy Right @2020 | Designed by Andrea</h5>
+        <br><br>
+        <h3>Copy Right @2020 | Designed by Andrea &copy;</h3>
         <br><br>
         <app-social></app-social>
         <br><br>
@@ -68,6 +69,7 @@ export default {
     background-color:#363636;
     margin-left: auto;
     margin-right: auto;
+    font-family: sans-serif;
 }
 .footerWrapper{
     margin-left: auto;
@@ -83,9 +85,19 @@ export default {
 .container > p {
     padding : 3px 0;
     cursor: pointer;
+    color : #aca5a5;
 }.container > p:hover {
     text-decoration: underline;
 }
+  @media screen and (max-width:1040px) {
+
+  .container{
+    width: 200px;
+    min-width: 100px;
+    padding :  0 3%;
+} 
+    
+  }
 
 
 </style>

@@ -91,6 +91,7 @@ img{
   }
   .coddingMan {
         animation: imageAnimation 2s alternate infinite ;
+        transition : all .6 ease;
   }
   .shadowDiv{
       background-color: rgb(202, 202, 202);
@@ -108,6 +109,7 @@ img{
 
       
   }
+  
   @keyframes imageAnimation {
     from {
       transform: translateY(-10px);
