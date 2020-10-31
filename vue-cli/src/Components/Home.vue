@@ -127,6 +127,23 @@ img{
   }
     
   }
+    @media  (max-width:720px) {
+
+   .mainDiv{
+     display : block;
+     text-align: center;
+    height: 80vh;
+    padding-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+   .textWrapper{
+   margin-left : auto;
+   margin-right : auto;
+
+
+  }
+  }
+    
   
   @keyframes imageAnimation {
     from {
