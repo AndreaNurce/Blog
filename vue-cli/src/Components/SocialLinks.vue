@@ -58,4 +58,13 @@ export default {
   background: #6ec0ff;
   color: white;
 }
+@media  (max-width:720px) {
+
+    .fa {
+
+      display: none;
+
+}
+    
+  }
 </style>

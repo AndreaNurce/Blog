@@ -70,6 +70,8 @@ img{
     height: 80vh;
     padding-top: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition : all 0.6s ease-in-out;
+
   }
   .textWrapper{
     width: 400px;
@@ -132,15 +134,10 @@ img{
    .mainDiv{
      display : block;
      text-align: center;
-    height: 80vh;
-    padding-top: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
    .textWrapper{
    margin-left : auto;
    margin-right : auto;
-
-
   }
   }
     
