@@ -117,8 +117,7 @@ export default {
   display:grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
-  column-gap: 40px;
-  row-gap: 40px;
+
 
 }
 .containerWrapper > :last-child{

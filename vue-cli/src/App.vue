@@ -41,7 +41,4 @@ export default {
       opacity: 0 ;
       transition : opacity .3s;
     }
-body{
-   min-width:444px;
-}
   </style>
