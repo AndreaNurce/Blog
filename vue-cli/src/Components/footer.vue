@@ -86,8 +86,10 @@ export default {
     padding : 3px 0;
     cursor: pointer;
     color : #aca5a5;
+    transition : all .3s ease-in-out;
 }.container > p:hover {
     text-decoration: underline;
+    color : white;
 }
   @media screen and (max-width:1040px) {
 
