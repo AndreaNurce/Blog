@@ -95,6 +95,7 @@ export default {
     width: 200px;
     min-width: 100px;
     padding :  0 3%;
+    transition : all 0.5s ease-in-out;
 } 
     
   }

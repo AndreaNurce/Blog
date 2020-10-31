@@ -74,6 +74,8 @@ img{
   .textWrapper{
     width: 400px;
     line-height: 25px;
+    transition : all 0.6s ease-in-out;
+
 
   }
   .textWrapper > button{
@@ -90,8 +92,9 @@ img{
     background-color:#888cbb;
   }
   .coddingMan {
+    transition : all 0.6s ease-in-out;
         animation: imageAnimation 2s alternate infinite ;
-        transition : all .6 ease;
+        
   }
   .shadowDiv{
       background-color: rgb(202, 202, 202);
@@ -115,10 +118,12 @@ img{
     width: 300px;
     line-height: 25px;
 
+
   }
     .coddingMan {
        width:400.43901px; 
        height:250.88124px; 
+
   }
     
   }
