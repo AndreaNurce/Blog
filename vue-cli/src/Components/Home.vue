@@ -1,7 +1,7 @@
 <template>
 <div>
   <div ref="enterDiv" style="padding-bottom:100px;position:fixed;z-index:-1; top:0; width:100%; background-color:white;">
-  <div class="mainDiv">
+  <div class="mainDiv" >
     <div class="textWrapper" >
     <h1 style="color:#3F3D56;">Lorem ipsum dolor</h1><br><br>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -17,9 +17,9 @@
   </div>
   </div>
   <div style="margin-top:680px;">
-  <app-social></app-social>
+  <app-social id="socialNav"></app-social>
 <img src="/src/images/svg.svg" alt="">
-<app-aboutUs style="margin-top : -6px;
+<app-aboutUs  style="margin-top : -6px;
                     margin-bottom:0px;
                     background-color:#3F3D56;
                     color:white;"
@@ -41,7 +41,8 @@ import footer from './footer.vue'
 export default {
   data (){
     return{
-      isUserScrolling : 'true'
+      isUserScrolling : 'true',
+      nav : ''
     }
   },
   components :{
@@ -50,11 +51,34 @@ export default {
     'app-contactUs' : ContactUs,
     'app-footer' : footer,
     
+  },mounted () {
+    window.addEventListener('scroll', this.handleScroll);
+
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+    
+  },
+  methods: {
+    handleScroll (event) {
+      this.offset = window.pageYOffset;
+      if(window.pageYOffset > 220){
+        this.nav = document.querySelector('#socialNav');
+        this.nav.style.opacity = 0;
+      }else{
+       document.querySelector('#socialNav ').style.opacity = 1;
+      }
+    }
   }
-  }
+  
+}
 
 </script>
 <style scoped>
+#socialNav {
+    transition : all .6s ease-in-out;
+
+}
 img{
   width:100.14%;
   margin-top:-120px;

@@ -1,12 +1,12 @@
 <template>
   <div id="AboutUs">
-    <div class="headWrapper">
+    <div class="headWrapper" style="opacity:0;">
       <h2 class="" >We create brands that the world loves </h2>
       <h1>About Us</h1>
       <p>lor sit amet, consectetur adipisicing elit. Magnam, repudiandae et? Eius doloribus atque libero assumenda deleniti fugiat quia facilis officiis natus! Dolores voluptates illo molestiae consequatur laboriosam. Sit, itaque!</p>
       <h3 >Find Out More</h3>
     </div>
-    <div class="containerWrapper">
+    <div class="containerWrapper" style="opacity:0;">
       <div v-bind:key = index v-for="(item,index) in items" >
         <div class="container">
           <img v-bind:src="item" alt="">
@@ -28,13 +28,38 @@ export default {
     dumbText : "dolor sit amet consectetur adipisicing elit. Ab, ea eaque quasi molestiae voluptatem iure ipsam voluptate ipsa, voluptas sed sapiente. Deserunt doloremque, sunt adipisci eos consequatur ea illo explicabo!",
     items: ['/src/images/1.png','/src/images/2.png','/src/images/3.png','/src/images/4.png']
   }
-}
+},mounted () {
+    window.addEventListener('scroll', this.handleScroll);
+
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+    
+  },
+  methods: {
+    handleScroll (event) {
+      this.offset = window.pageYOffset;
+      if(window.pageYOffset > 350){
+       document.querySelector('.headWrapper').style.opacity = 1;
+      }else{
+       document.querySelector('.headWrapper ').style.opacity = 0;
+      }
+      if (window.pageYOffset >= 880){
+       document.querySelector('.containerWrapper').style.opacity = 1;
+
+      }else{
+
+       document.querySelector('.containerWrapper').style.opacity = 0;
+      }
+    }
+  }
   
 }
 </script>
 <style scoped>
 
 .containerWrapper{
+  transition: all 0.6s ease-in-out;
   display:grid;
   grid-template-columns: auto auto ;
   grid-template-rows: auto auto;
@@ -57,6 +82,8 @@ export default {
   box-shadow:0  12px 6px rgba(0,0,0,0.2);
   z-index: 2;
   position: relative;
+  transition: all 0.6s ease-in-out;
+
 }
 .container > p {
   color : gray;
@@ -80,6 +107,7 @@ export default {
   margin-left: auto;
   margin-right : auto;
   padding-bottom: 200px;
+  transition: all .4s ease-in;
 }
 .headWrapper > p {
   padding: 60px;
