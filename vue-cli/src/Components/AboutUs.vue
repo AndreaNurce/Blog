@@ -30,7 +30,7 @@ export default {
   }
 },mounted () {
     window.addEventListener('scroll', this.handleScroll);
-
+  
   },
   destroyed () {
     window.removeEventListener('scroll', this.handleScroll);
@@ -39,6 +39,7 @@ export default {
   methods: {
     handleScroll (event) {
       this.offset = window.pageYOffset;
+      console.log( window.pageYOffset)
       if(window.pageYOffset > 350){
        document.querySelector('.headWrapper').style.opacity = 1;
       }else{

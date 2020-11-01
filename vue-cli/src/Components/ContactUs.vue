@@ -51,6 +51,39 @@ export default {
         }
       ]
     }
+  },mounted () {
+    window.addEventListener('scroll', this.handleScroll);
+  
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+    
+  },
+  methods: {
+    handleScroll (event) {
+      this.offset = window.pageYOffset;
+      if (window.pageYOffset >= 2000){
+       document.querySelector('.formWrapper').style.opacity = 1;
+       document.querySelector('.formWrapper').style.transitionDelay =".0s";
+
+
+      }else{
+
+       document.querySelector('.formWrapper').style.opacity = 0;
+       document.querySelector('.formWrapper').style.transitionDelay =".35s";
+
+       
+      }if (window.pageYOffset >= 2000){
+       document.querySelector('.contactWrapper').style.transitionDelay =".35s";
+       document.querySelector('.contactWrapper').style.opacity = 1;
+
+      }else{
+
+       document.querySelector('.contactWrapper').style.opacity = 0;
+       document.querySelector('.contactWrapper').style.transitionDelay =".0s";
+
+      }
+    }
   }
 }
 </script>
@@ -79,6 +112,7 @@ export default {
 .formWrapper{
   width : 50%;
   background-color: white;
+  transition: all .6s ease-in-out;
 }
 .formWrapper  > h2{
   font-size: 20px;
@@ -130,6 +164,8 @@ export default {
 .contactWrapper{
   width : 50%;
   background-color: black;
+  transition: all .6s ease-in-out;
+
 }
 .ContactUsWrapper{
   display: flex;
