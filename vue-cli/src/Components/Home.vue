@@ -18,7 +18,7 @@
   </div>
   <div style="margin-top:680px;">
   <app-social id="socialNav"></app-social>
-<img src="/src/images/svg.svg" alt="">
+<img src="images/svg.svg" alt="">
 <app-aboutUs  style="margin-top : -6px;
                     margin-bottom:0px;
                     background-color:#3F3D56;

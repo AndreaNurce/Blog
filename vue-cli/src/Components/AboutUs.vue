@@ -26,7 +26,7 @@ export default {
   return{
     dumbHeader : "Lorem Ipsum",
     dumbText : "dolor sit amet consectetur adipisicing elit. Ab, ea eaque quasi molestiae voluptatem iure ipsam voluptate ipsa, voluptas sed sapiente. Deserunt doloremque, sunt adipisci eos consequatur ea illo explicabo!",
-    items: ['/src/images/1.png','/src/images/2.png','/src/images/3.png','/src/images/4.png']
+    items: ['images/1.png','images/2.png','images/3.png','images/4.png']
   }
 },mounted () {
     window.addEventListener('scroll', this.handleScroll);
@@ -39,18 +39,18 @@ export default {
   methods: {
     handleScroll (event) {
       this.offset = window.pageYOffset;
-      console.log( window.pageYOffset)
-      if(window.pageYOffset > 350){
-       document.querySelector('.headWrapper').style.opacity = 1;
-      }else{
-       document.querySelector('.headWrapper ').style.opacity = 0;
-      }
-      if (window.pageYOffset >= 880){
-       document.querySelector('.containerWrapper').style.opacity = 1;
+      let pathName = window.location.pathname;
 
-      }else{
 
-       document.querySelector('.containerWrapper').style.opacity = 0;
+      if(pathName == "/blogHosted/"){
+      if(window.pageYOffset > 350) document.querySelector('.headWrapper').style.opacity = 1;
+       else document.querySelector('.headWrapper ').style.opacity = 0;
+      if (window.pageYOffset >= 880) document.querySelector('.containerWrapper').style.opacity = 1;
+       else document.querySelector('.containerWrapper').style.opacity = 0;
+      }else{
+        document.querySelector('.headWrapper').style.opacity = 1;
+      if (window.pageYOffset >= 250) document.querySelector('.containerWrapper').style.opacity = 1;
+       else document.querySelector('.containerWrapper').style.opacity = 0;
       }
     }
   }

@@ -2,11 +2,11 @@
     <div>
         <div class="mainBarWrapper">
             <div class="mainBar">
-                <a href="/"><img src="/src/images/instagram.png"  alt="logo"></a>
+                <a href="/blogHosted/"><img src="images/instagram.png"  alt="logo"></a>
                 <ul>
-                    <router-link to="/" active-class="active" tag="li" exact>Home</router-link>
-                    <router-link to="/about" active-class="active" tag="li" >About Us</router-link>
-                    <router-link to="/ContactUs" active-class="active" tag="li" >Contact Us</router-link>
+                    <router-link to="/blogHosted/" active-class="active" tag="li" exact>Home</router-link>
+                    <router-link to="/blogHosted/about" active-class="active" tag="li" >About Us</router-link>
+                    <router-link to="/blogHosted/ContactUs" active-class="active" tag="li" >Contact Us</router-link>
                     
                 </ul>
             </div>

@@ -39,15 +39,15 @@ export default {
       contents : [
         {
           text : '123-456-789',
-          image : '/src/images/mobile-phone.png',
+          image : 'images/mobile-phone.png',
         },
         {
           text : '222-444-8888',
-          image : '/src/images/old-typical-phone.png',
+          image : 'images/old-typical-phone.png',
         },
         {
           text : 'example@example.com',
-          image : '/src/images/email.png',
+          image : 'images/email.png',
         }
       ]
     }
@@ -62,6 +62,9 @@ export default {
   methods: {
     handleScroll (event) {
       this.offset = window.pageYOffset;
+      let pathName = window.location.pathname;
+      if(pathName == "/blogHosted/" ){
+
       if (window.pageYOffset >= 2000){
        document.querySelector('.formWrapper').style.opacity = 1;
        document.querySelector('.formWrapper').style.transitionDelay =".0s";
@@ -81,6 +84,7 @@ export default {
 
        document.querySelector('.contactWrapper').style.opacity = 0;
        document.querySelector('.contactWrapper').style.transitionDelay =".0s";
+      }
 
       }
     }
